@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Internship | Task 5</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: #f8fafc;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 22px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #111c32;
+        }
+
+        header h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            color: #94a3b8;
+            max-width: 650px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #0284c7;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #0369a1;
+            transform: translateY(-3px);
+        }
+
+        .section {
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #38bdf8;
+        }
+
+        .section p {
+            color: #94a3b8;
+            max-width: 750px;
+            margin: auto;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 35px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 10px;
+            width: 260px;
+            border: 1px solid #334155;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: #38bdf8;
+        }
+
+        .card h3 {
+            color: #38bdf8;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            font-size: 14px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #111c32;
+            color: #94a3b8;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>DevOps Project</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#technologies">Technologies</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Welcome to My <span>DevOps Project</span></h1>
+
+        <p>
+            Exploring modern DevOps practices through hands-on projects.
+            This website demonstrates static website hosting using
+            GitHub Pages.
+        </p>
+
+        <a href="#about" class="btn">Explore Project</a>
+    </section>
+
+    <section class="section" id="about">
+        <h2>About This Project</h2>
+
+        <p>
+            This project is part of my DevOps Internship.
+            The objective is to create a static website using HTML and CSS,
+            manage its source code using Git and GitHub, and deploy it
+            online using GitHub Pages.
+        </p>
+    </section>
+
+    <section class="section" id="technologies">
+        <h2>Technologies Used</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>HTML5</h3>
+                <p>Used to structure the website and define its content.</p>
+            </div>
+
+            <div class="card">
+                <h3>CSS3</h3>
+                <p>Used to style the website and create a responsive layout.</p>
+            </div>
+
+            <div class="card">
+                <h3>Git & GitHub</h3>
+                <p>Used for version control and source code management.</p>
+            </div>
+
+            <div class="card">
+                <h3>GitHub Pages</h3>
+                <p>Used to host and publish the static website online.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>DevOps Internship | Task 5</p>
+        <p>Hosted with GitHub Pages</p>
+    </footer>
+
+</body>
+</html>
